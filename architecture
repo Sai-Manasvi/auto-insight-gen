@@ -1,0 +1,24 @@
+           ┌──────────────────────┐
+           │ Amazon Reviews Data │
+           └─────────┬────────────┘
+                     │
+                     ▼
+        ┌─────────────────────────────┐
+        │ BigQuery SQL                │
+        │ • Filter/prepare data       │
+        │ • Aggregate reviews         │
+        └────────────┬────────────────┘
+                     ▼
+       ┌────────────────────────────┐
+       │ BigQuery Generative AI     │
+       │ • ML.GENERATE_TEXT         │
+       │ • AI.GENERATE_BOOL         │
+       │ • AI.FORECAST (optional)   │
+       └────────────┬───────────────┘
+                    ▼
+     ┌─────────────────────────────────┐
+     │ Outputs:                        │
+     │ • Review Summaries              │
+     │ • Sentiment Classification      │
+     │ • Forecast Charts (Optional)    │
+     └─────────────────────────────────┘
